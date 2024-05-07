@@ -1,0 +1,47 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: grey;
+    gap: 10px;
+    padding: 10px;
+    max-width: fit-content;
+}
+
+.mobile {
+    display: inline-block;
+}
+
+.desktop {
+    display: none;
+}
+
+.enfant {
+    display: flex;
+    background-color: orangered;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.star {
+    max-height: 100px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .parent {
+        flex-direction: row;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+    .desktop {
+        display: inline-block;
+    }
+    
+}

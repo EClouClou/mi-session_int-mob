@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ca-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="../JS/app.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="enfant">
+            <span class="mobile">mobile</span>
+            <span class="desktop">desktop</span>
+        </div>
+        <div class="enfant">
+            <span class="mobile">mobile</span>
+            <span class="desktop">desktop</span>
+        </div>
+    </div>
+
+    <div class="star-container"></div>
+    <picture>
+        <source class="star" media="(min-width: 1024px)" srcset="./IMG/etoile3.svg" alt="Étoile 3">
+        <source class="star" media="(min-width: 768px)" srcset="./IMG/etoile2.svg" alt="Étoile 2">
+        <img class="star" src="./IMG/etoile1.svg" alt="Étoile 1">
+    </picture>
+</body>
+</html>
